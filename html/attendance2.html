@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/attendance2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+<body>
+    <button onclick="logout()">Logout</button>
+<main>
+    <section>
+        <form action="" id="employee">
+            <div>
+                <label for="">Employee Name</label>
+                <input type="text" name="name" id="" placeholder="Name">
+            </div>
+            <div>
+                <label for="">Employee Email</label>
+                <input type="text" name="email" id="" placeholder="EmpEmail">
+            </div>
+            <div>
+                <label for="">Date</label>
+                <input type="date" name="date" id="" placeholder="Date">
+            </div>
+            <div>
+                <label for="">Time</label>
+                <input type="time" name="time" id="" placeholder="Time">
+            </div>
+            <div class="btn"><button type="submit" onclick="add()">Add Attendance</button></div>
+        </form>
+    
+        <div id="attandance">
+            <h3>Annual Salary = "6 LPA"</h3>
+            <button id="getSalary" class="btn">Get Salary</button>
+            <h2 id="salary">Salary of this month is : <span id="monthsalary" style="color:red"></span></h2>
+        </div>
+    </section>
+    
+    <div>
+        <div class="wrapper">
+            <header>
+                <p class="current-date">September 2022</p>
+                <div class="icons">
+                    <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                    <span id="next" class="material-symbols-rounded">chevron_right</span>
+                </div> 
+            </header>
+            <div class="calendar">
+                <ul class="weeks">
+                    <li>Sun</li>
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                </ul>
+                <ul class="days">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+    
+    
+</body>
+<script src="../js/attendance2.js"></script>
+</html>
